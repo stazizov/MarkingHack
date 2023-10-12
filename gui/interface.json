@@ -1,0 +1,51 @@
+{
+    "title": "Предиктивная аналитика",
+    "upload_1": "Данные о вводе товаров в оборот",
+    "upload_2": "Данные о выводе товаров в оборот",
+    "upload_3": "Данные о перемещении товаров в обороте",
+    "upload_4": "Справочник продукции",
+    "upload_5": "Справочник торговых точек",
+    "upload_6": "Справочник участников оборота товаров",
+
+    "download_folder": "dataset",
+    "input_filename": "input.parquet",
+    "transition_filename": "transition.parquet",
+    "output_filename": "output.parquet",
+    "geochain_filename": "geochain.json",
+    "inn_2_coords_filename":"inn_2_coords.json",
+    "sender_receiver_filename": "sender_receiver.json",
+    "mappage_title": "Связь цепочек поставок",
+    "max_threshold_sidebar_text": "Максимальная длина маршрута",
+    "min_threshold_sidebar_text": "Минимальная длина маршрута",
+
+    "plot_messages": {
+        "piechart_title_prefix": "Круговая диаграма по колонке ",
+        "boxplot_title_prefix": "Распределение значений по колонке "
+    },
+
+    "welcome_page_text_prefix": "Введите ссылку на ",
+    "missing_data_message": "Пожалуйста загрузите соответствующие данные...",
+    "warning":{
+        "wrong_columns_warning_p1":"должны содержать",
+        "wrong_columns_warning_p2":"а не"
+    },
+
+    "n_rows_table" : 20,
+    "max_data_points": 300,
+
+    "emojies": {
+        "done": "✅",
+        "pushpin": "📌",
+        "bar_chart": "📊",
+        "uptrend" : "📈"
+    },
+
+    "required_columns": {
+        "Данные о вводе товаров в оборот": ["dt", "inn", "gtin", "prid", "operation_type", "cnt"],
+        "Данные о выводе товаров в оборот": ["dt", "gtin", "prid", "inn", "id_sp_", "type_operation", "price", "cnt"],
+        "Данные о перемещении товаров в обороте": ["dt",	"gtin",	"prid",	"sender_inn",	"receiver_inn",	"cnt_moved"],
+        "Справочник продукции": ["gtin", "inn", "product_name", "product_short_name", "tnved", "tnved10", "brand", "country", "volume"],
+        "Справочник торговых точек": ["id_sp_", "inn", "region_code", "city_with_type", "city_fias_id", "postal_code"],
+        "Справочник участников оборота товаров": ["inn", "region_code"]
+    }
+}
